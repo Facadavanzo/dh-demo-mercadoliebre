@@ -1,0 +1,15 @@
+{
+  "name": "sitio-web",
+  "version": "1.0.0",
+  "description": "sitio web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Facundo Davanzo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "normalize.css": "^8.0.1"
+  }
+}
