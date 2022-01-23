@@ -18,131 +18,123 @@
     <body>
         <header>
             <div class="header-top-bar">
-                <img class = "img-logo" src="/img/logo-mercado-liebre.svg" alt="Logo de mercado liebre">
-                <div class="buscar">
-                    <input type="text" placeholder="Buscar productos, marcas">
-                    <button><i class="fa fa-search"></i></button>
+                <img class="img-logo" src="/img/logo-mercado-liebre.svg" alt="Logo de mercado liebre">
+                <div class="search-container">
+                    <div class="searchbar">
+                        <input type="text" placeholder="Buscar productos, marcas">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
                 </div>
-                <h2 class="head-header"><i class="fas fa-hand-holding-usd">
-                </i>Comprá en cuotas y sin tarjeta de crédito</h2>
+                <p class="head-header">
+                    <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito
+                </p>
             </div>
-            <nav id="main-nav">
+            <nav id = "main-nav">
                 <ul class = "right-main-nav">
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
+                    <li><a href = "#">Ofertas</a></li>
+                    <li><a href = "#">Tiendas Oficiales</a></li>
+                    <li><a href = "#">Vender</a></li>
+                    <li><a href = "#">Ayuda</a></li>
                 </ul>
-                <ul class = "right-main-nav">
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></a></i></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></i></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></i></li>
+                <ul class = "left-main-nav">
+                    <li><a href = "/register">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
+                    <li><a href = "/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href = "#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
             <div class="burger-menu">
-            <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </div>
         </header>
-        <main id = "main-section">
+        <main>
             <section>
-            <h1>Registrate</h1>
-
-            <form>
-
-                <div class = "form-input">
-                    <label class = "main-label" for = "name-surname"></label>
-                    <input id = "name-surname" type = "text" name = "name-surname" placeholder="Nombre y apellido">
-                    <p class="error">Este campo es requerido</p>
-                </div>
-
-                <div class = "form-input">
-                    <label class = "main-label" for = "username"></label>
-                    <input id = "username" type = "text" name = "username" placeholder="Nombre de usuari@">
-                </div>
-
-                <div class="form-input">
-                    <label class="main-label" for="birthdate">Fecha de nacimiento</label>
-                    <input id="birthdate" type="date" name="birthdate">
-                </div>
-
-                <div class="form-input">
-                    <label class="main-label" for="adress"></label>
-                    <input id="adress" type="text" name="adress" placeholder="Domicilio">
-                </div>
-
-                <div class = "form-input">
-                    <label class="main-label">Perfil de usuario</label>
-                    <input type="radio" name="user-profile" id="user-profile-buyer" value="buyer">
-                    <label class="radio-label" for="user-profile-buyer">Comprador</label>
-
-                    <input type="radio" name="user-profile" id="user-profile-seller" value="seller">
-                    <label class="radio-label" for="user-profile-seller">Vendedor</label>
-                </div>
-
-                <div class = "form-input">
-                    <label class="main-label">Intereses</label>
-                    <div class = "not-main-label">
-                        <input type="checkbox" name="electro" id="electro" value="electro">
-                        <label for="electro">Electro</label>
+                <h1 class="form-title">Registrate</h1>
+                <form action="/">
+                    <div class = "form-input">
+                        <label class = "main-label" for = "name-surname"></label>
+                        <input id = "name-surname" type = "text" name = "name-surname" placeholder="Nombre y apellido">
+                        <p class="error">Este campo es requerido</p>
                     </div>
-
-                    <div class="not-main-label">
-                        <input type="checkbox" name="moda" id="moda" value="moda">
-                        <label for="moda">Moda</label>
+                    <div class = "form-input">
+                        <label class = "main-label" for = "username"></label>
+                        <input id = "username" type = "text" name = "username" placeholder="Nombre de usuari@">
                     </div>
-
-                    <div class="not-main-label">
-                        <input type="checkbox" name="hogar" id="hogar" value="hogar">
-                        <label for="hogar">Hogar</label>
+                    <div class="form-input">
+                        <label class="main-label" for="birthdate">Fecha de nacimiento</label>
+                        <input id="birthdate" type="date" name="birthdate">
                     </div>
-
-                    <div class="not-main-label">
-                        <input type="checkbox" name="jugeteria" id="jugeteria" value="jugeteria">
-                        <label for="jugeteria">Jugetería</label>
+                    <div class="form-input">
+                        <label class="main-label" for="adress"></label>
+                        <input id="adress" type="text" name="adress" placeholder="Domicilio">
                     </div>
+                    <div class = "form-input">
+                        <label class="main-label">Perfil de usuario</label>
+                        <input type="radio" name="user-profile" id="user-profile-buyer" value="buyer">
+                        <label class="radio-label" for="user-profile-buyer">Comprador</label>
 
-                    <div class="not-main-label">
-                        <input type="checkbox" name="vida-sana" id="vida-sana" value="vida-sana">
-                        <label for="vida-sana">Vida sana</label>
+                        <input type="radio" name="user-profile" id="user-profile-seller" value="seller">
+                        <label class="radio-label" for="user-profile-seller">Vendedor</label>
                     </div>
-                </div>
-
-                <div class="form-input">
-                    <label class="main-label" for="profile-img">Foto de usuario</label>
-                    <input type="file" name="profile-img" id="profile-img" accept="image/png,image/jpeg">
-                </div>
-
-                <div class = "form-input">
-                    <label class = "main-label" for = "password"></label>
-                    <input type = "text" name = "password" id = "password" placeholder="Elegí tu contraseña">
-                </div>
-
-                <div class="form-input">
-                    <label class = "main-label" for = "re-password"></label>
-                    <input type = "text" name = "re-password" id = "re-password" placeholder="Confirmar contraseña">
-                </div>
-
-                <button class="form-button" type = "submit">Enviar</button>
-                <button class="form-button" type = "reset">Resetear</button>
-            </form>
+                    <div class = "form-input">
+                        <label class="main-label">Intereses</label>
+                        <div class = "not-main-label">
+                            <input type="checkbox" name="electro" id="electro" value="electro">
+                            <label for="electro">Electro</label>
+                        </div>
+                        <div class="not-main-label">
+                            <input type="checkbox" name="moda" id="moda" value="moda">
+                            <label for="moda">Moda</label>
+                        </div>
+                        <div class="not-main-label">
+                            <input type="checkbox" name="hogar" id="hogar" value="hogar">
+                            <label for="hogar">Hogar</label>
+                        </div>
+                        <div class="not-main-label">
+                            <input type="checkbox" name="jugeteria" id="jugeteria" value="jugeteria">
+                            <label for="jugeteria">Jugetería</label>
+                        </div>
+                        <div class="not-main-label">
+                            <input type="checkbox" name="vida-sana" id="vida-sana" value="vida-sana">
+                            <label for="vida-sana">Vida sana</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label class="main-label" for="profile-img">Foto de usuario</label>
+                        <input type="file" name="profile-img" id="profile-img" accept="image/png,image/jpeg">
+                    </div>
+                    <div class = "form-input">
+                        <label class = "main-label" for = "password"></label>
+                        <input type = "text" name = "password" id = "password" placeholder="Elegí tu contraseña">
+                    </div>
+                    <div class="form-input">
+                        <label class = "main-label" for = "re-password"></label>
+                        <input type = "text" name = "re-password" id = "re-password" placeholder="Confirmar contraseña">
+                    </div>
+                    <div class="form-buttons">
+                        <button class="form-button submit" type = "submit">Enviar</button>
+                        <button class="form-button reset" type = "reset">Resetear</button>
+                    </div>
+                </form>
             </section>
         </main>
         <footer>
             <div class="footer-div">
             <article>
-                <i class="fas fa-credit-card"></i>
+                <i class="fas fa-credit-card" id="footer-icon"></i>
                 <h4>Pagá con tarjeta o en efectivo</h4>
                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                     puntos de pago. ¡Y siempre es seguro!</p>
             </article>        
             <article>
-                <i class="fas fa-gift"></i>
+                <i class="fas fa-gift" id="footer-icon"></i>
                 <h4>Envío gratis desde $ 2.500</h4>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p>
             </article>        
             <article>
-                <i class="fas fa-user-shield"></i>
+                <i class="fas fa-user-shield" id="footer-icon"></i>
                 <h4>Seguridad, de principio a fin</h4>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p>

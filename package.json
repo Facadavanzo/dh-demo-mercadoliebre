@@ -4,12 +4,16 @@
   "description": "sitio web",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "Facundo Davanzo",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
